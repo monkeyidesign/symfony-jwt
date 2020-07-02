@@ -1,0 +1,44 @@
+api
+composer req admin
+composer req api
+
+composer require api-platform/schema-generator
+vendor/bin/schema generate-types src/ config/schema.yaml
+
+composer req lexik/jwt-authentication-bundle
+
+*****************************************************************
+composer req twig
+composer req symfony/maker-bundle --dev
+composer req annotations
+composer req symfony/maker-bundle --dev
+composer req symfony/asset
+composer req symfony/apache-pack
+composer req symfony/webpack-encore-bundle
+composer req security or composer require symfony/security-bundle
+composer req symfony/validator
+composer req doctrine
+composer req symfony/orm-pack or composer req orm
+composer req orm-fixtures --dev
+
+--extra!
+composer req symfony/var-dumper
+composer req symfony/profiler-pack
+composer req symfony/debug-bundle
+
+npm install sass-loader node-sass --save-dev
+npm install popper.js --save
+npm install bootstrap
+npm install jquery
+npm install --save @fortawesome/fontawesome-free
+
+php bin/console:
+php bin/console make:user
+php bin/console make:controller
+php bin/console make:entity
+php bin/console make:fixtures
+php bin/console make:migration
+php bin/console make:twig-extension
+php bin/console doctrine:database:create
+php bin/console doctrine:migration:migrate
+php bin/console doctrine:fixtures:load
